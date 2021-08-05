@@ -1,0 +1,12 @@
+C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify\bin\Release\net5.0\Humanizer.Uwuify.deps.json
+C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify\bin\Release\net5.0\Humanizer.Uwuify.dll
+C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify\bin\Release\net5.0\ref\Humanizer.Uwuify.dll
+C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify\bin\Release\net5.0\Humanizer.Uwuify.pdb
+C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify\obj\Release\net5.0\Humanizer.Uwuify.csprojAssemblyReference.cache
+C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify\obj\Release\net5.0\Humanizer.Uwuify.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify\obj\Release\net5.0\Humanizer.Uwuify.AssemblyInfoInputs.cache
+C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify\obj\Release\net5.0\Humanizer.Uwuify.AssemblyInfo.cs
+C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify\obj\Release\net5.0\Humanizer.Uwuify.csproj.CoreCompileInputs.cache
+C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify\obj\Release\net5.0\Humanizer.Uwuify.dll
+C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify\obj\Release\net5.0\ref\Humanizer.Uwuify.dll
+C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify\obj\Release\net5.0\Humanizer.Uwuify.pdb
