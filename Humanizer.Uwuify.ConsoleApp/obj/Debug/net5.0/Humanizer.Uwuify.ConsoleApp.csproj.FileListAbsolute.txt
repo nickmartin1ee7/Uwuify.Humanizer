@@ -7,7 +7,6 @@ C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify.ConsoleApp\bin\Deb
 C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify.ConsoleApp\bin\Debug\net5.0\Humanizer.Uwuify.ConsoleApp.pdb
 C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify.ConsoleApp\bin\Debug\net5.0\Humanizer.Uwuify.dll
 C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify.ConsoleApp\bin\Debug\net5.0\Humanizer.Uwuify.pdb
-C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify.ConsoleApp\obj\Debug\net5.0\Humanizer.Uwuify.ConsoleApp.csprojAssemblyReference.cache
 C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify.ConsoleApp\obj\Debug\net5.0\Humanizer.Uwuify.ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify.ConsoleApp\obj\Debug\net5.0\Humanizer.Uwuify.ConsoleApp.AssemblyInfoInputs.cache
 C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify.ConsoleApp\obj\Debug\net5.0\Humanizer.Uwuify.ConsoleApp.AssemblyInfo.cs
@@ -17,3 +16,4 @@ C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify.ConsoleApp\obj\Deb
 C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify.ConsoleApp\obj\Debug\net5.0\ref\Humanizer.Uwuify.ConsoleApp.dll
 C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify.ConsoleApp\obj\Debug\net5.0\Humanizer.Uwuify.ConsoleApp.pdb
 C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify.ConsoleApp\obj\Debug\net5.0\Humanizer.Uwuify.ConsoleApp.genruntimeconfig.cache
+C:\Users\doort\source\repos\Humanizer.Uwuify\Humanizer.Uwuify.ConsoleApp\obj\Debug\net5.0\Humanizer.Uwuify.ConsoleApp.csproj.AssemblyReference.cache
