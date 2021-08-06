@@ -13,9 +13,9 @@ The class library is made to be the main focus of this repository, with the othe
 ```cs
 using Uwuify.Humanizer
 
-string myString = "Hello World!".Uwuify();
+string myString = "Hello World! This is an example usage of the cursed humanizer UwU string formatting extension. I hope you love/hate it as much as I do!".Uwuify();
 
-// myString: "hewwo w-wowwd *:･ﾟ✧*:･ﾟ✧  t-this i-is my exampwe usage of this cuwsed humanyizew extenysiony (≧◡≦)"
+// myString: "hewwo wowwd-.- t-this is an exampwe u-usage o-of the cuwsed h-humanyizew u-uwu s-stwinyg fowmattinyg extenysiony xD i h-hope you wove/hate i-it as much as i-i d-do *:･ﾟ✧*:･ﾟ✧"
 ```
 
 ## Benchmarks (1.0.2)
