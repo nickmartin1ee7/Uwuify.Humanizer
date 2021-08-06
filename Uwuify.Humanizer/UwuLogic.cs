@@ -68,7 +68,7 @@ namespace Uwuify.Humanizer
                 // Stuttering
                 (' ', _, _) => _rng.NextDouble() < _stutterChance ? $"{current}-{current}" : current.ToString(),
 
-                // ASCII
+                // Kaomoji
                 (_, '.', _) => _kaomojiJoy[(int) (_rng.NextDouble() * _kaomojiJoy.Length)],
                 (_, '?', _) => _kaomojiConfuse[(int) (_rng.NextDouble() * _kaomojiConfuse.Length)],
                 (_, '!', _) => _kaomojiSparkles[(int) (_rng.NextDouble() * _kaomojiSparkles.Length)],
