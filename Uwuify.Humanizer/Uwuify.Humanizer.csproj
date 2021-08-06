@@ -24,11 +24,11 @@
     <Authors>Nick Martin</Authors>
     <Company>Nick Martin</Company>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <Description>An extension method for strings to convert it into the UwU variant.</Description>
+    <Description>A library to format strings into the UwU variant.</Description>
     <Copyright>Copyright (c) 2021 Nick Martin</Copyright>
     <Product>Uwuify</Product>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageTags>funny;formatting;humanizer;</PackageTags>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 </Project>
