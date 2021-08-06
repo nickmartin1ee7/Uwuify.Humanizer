@@ -7,7 +7,7 @@ The class library is made to be the main focus of this repository, with the othe
 ## Features
 
 - Studder at random intervals (customizable as of 1.0.2).
-- Specific characters replaced with 'w'.
+- Specific characters replaced with 'w' or "ny".
 - Kaomojis replaces some puntuation symbols.
 
 ## Status Badges
