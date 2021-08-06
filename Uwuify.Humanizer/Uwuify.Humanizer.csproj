@@ -20,6 +20,7 @@
   </ItemGroup>
   <PropertyGroup>
     <Title>Uwuify</Title>
+    <Description>A library to format strings into the UwU variant.</Description>
     <Authors>Nick Martin</Authors>
     <Company>Nick Martin</Company>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
