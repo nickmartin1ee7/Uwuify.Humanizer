@@ -26,4 +26,4 @@ jobs:
     - name: Nuget Publish
       env: 
         PUBLISH_SECRET: ${{secrets.PUBLISH_SECRET}}
-      run: dotnet nuget push "output/Uwuify.Humanizer.1.0.0.nupkg"  --api-key $PUBLISH_SECRET --source "github"
+      run: dotnet nuget push "output/Uwuify.Humanizer.1.0.0.nupkg"  --api-key $PUBLISH_SECRET --source "https://github.com/$GITHUB_REPOSITORY"
