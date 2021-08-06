@@ -35,3 +35,8 @@ string myString = "Hello World! This is an example usage of the cursed humanizer
 |   TestCustomShort | 10.067 us | 0.1991 us | 0.2213 us | 2.1973 |     - |     - |      9 KB |
 |  TestCustomMedium | 29.079 us | 0.5545 us | 0.5187 us | 5.9509 |     - |     - |     24 KB |
 |    TestCustomLong | 37.586 us | 0.6099 us | 0.5093 us | 7.9346 |     - |     - |     33 KB |
+
+## Contribution
+
+- Angius#1586 : Thanks for the pattern matching and Span approach!
+- https://github.com/senguyen1011/UwUinator : Thank you for the initial inspiration!
