@@ -4,6 +4,12 @@ A library to format strings into the UwU variant.
 
 The class library is made to be the main focus of this repository, with the other projects (ConsoleApp and Benchmarks) being purely supplemental. 
 
+## Features
+
+- Studder at random intervals (customizable as of 1.0.2).
+- Specific characters replaced with 'w'.
+- Kaomojis replaces some puntuation symbols.
+
 ## Status Badges
 
 [![CI](https://github.com/nickmartin1ee7/Uwuify.Humanizer/actions/workflows/CI.yml/badge.svg)](https://github.com/nickmartin1ee7/Uwuify.Humanizer/actions/workflows/CI.yml)
