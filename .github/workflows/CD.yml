@@ -24,4 +24,4 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Nuget Publish
-      run: dotnet nuget push "bin/Release/Uwuify.Humanizer.1.0.0.nupkg"  --api-key ${{GITHUB-KEY}} --source "github"
+      run: dotnet nuget push "bin/Release/Uwuify.Humanizer.1.0.0.nupkg"  --api-key ${{PUBLISH_SECRET}} --source "github"
