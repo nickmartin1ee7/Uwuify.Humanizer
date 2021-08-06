@@ -20,13 +20,11 @@ string myString = "Hello World!".Uwuify();
 
 ## Benchmarks (1.0.2)
 
-// * Summary *
-
-BenchmarkDotNet=v0.13.0, OS=Windows 10
-AMD, 1 CPU, 16 logical and 8 physical cores
-.NET SDK=5.0.100
-  [Host]     : .NET 5.0.8 (5.0.821.31504), X64 RyuJIT
-  DefaultJob : .NET 5.0.8 (5.0.821.31504), X64 RyuJIT
+* BenchmarkDotNet=v0.13.0, OS=Windows 10
+* AMD, 1 CPU, 16 logical and 8 physical cores
+* .NET SDK=5.0.100
+  * [Host]     : .NET 5.0.8 (5.0.821.31504), X64 RyuJIT
+  * DefaultJob : .NET 5.0.8 (5.0.821.31504), X64 RyuJIT
 
 
 |            Method |      Mean |     Error |    StdDev |  Gen 0 | Gen 1 | Gen 2 | Allocated |
