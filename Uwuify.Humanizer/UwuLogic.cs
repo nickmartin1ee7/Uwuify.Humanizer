@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace Humanizer.Uwuify
+namespace Uwuify.Humanizer
 {
     internal class UwuLogic
     {
@@ -68,7 +68,7 @@ namespace Humanizer.Uwuify
                 // Stuttering
                 (' ', _, _) => _rng.NextDouble() < _stutterChance ? $"{current}-{current}" : current.ToString(),
 
-                // ASCII 
+                // ASCII
                 (_, '.', _) => _kaomojiJoy[(int) (_rng.NextDouble() * _kaomojiJoy.Length)],
                 (_, '?', _) => _kaomojiConfuse[(int) (_rng.NextDouble() * _kaomojiConfuse.Length)],
                 (_, '!', _) => _kaomojiSparkles[(int) (_rng.NextDouble() * _kaomojiSparkles.Length)],

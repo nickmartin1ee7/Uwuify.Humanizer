@@ -1,7 +1,8 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
+using Uwuify.Humanizer;
 
-namespace Humanizer.Uwuify.Benchmarks
+namespace Uwuify.Humanizer.Benchmarks
 {
     internal class Program
     {

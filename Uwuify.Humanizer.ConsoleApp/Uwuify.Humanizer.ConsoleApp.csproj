@@ -1,14 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net5.0</TargetFramework>
-        <RootNamespace>Humanizer.Uwuify</RootNamespace>
+        <RootNamespace>Uwuify.Humanizer</RootNamespace>
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Humanizer.Uwuify\Humanizer.Uwuify.csproj" />
+      <ProjectReference Include="..\Uwuify.Humanizer\Uwuify.Humanizer.csproj" />
     </ItemGroup>
 
 </Project>

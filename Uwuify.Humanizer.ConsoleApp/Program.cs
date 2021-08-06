@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace Humanizer.Uwuify
+namespace Uwuify.Humanizer
 {
     public static class Program
     {

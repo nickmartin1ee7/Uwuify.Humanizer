@@ -1,4 +1,4 @@
-﻿namespace Humanizer.Uwuify
+﻿namespace Uwuify.Humanizer
 {
     public static class StringExtensions
     {
