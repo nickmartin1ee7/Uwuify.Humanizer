@@ -1,4 +1,4 @@
-# Humanizer.Uwuify
+# Uwuify.Humanizer
 
 An extension method for strings to convert it into the UwU variant.
 
@@ -7,7 +7,7 @@ The class library is made to be the main focus of this repository, with the othe
 ## Usage
 
 ```cs
-using Humanizer.Uwuify
+using Uwuify.Humanizer
 
 string myString = "Hello World!".Uwuify();
 
