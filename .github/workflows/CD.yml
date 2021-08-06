@@ -22,6 +22,6 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Nuget Publish
-      env: 
-        PUBLISH_SECRET: ${{secrets.GITHUB_TOKEN}}
-      run: dotnet nuget add source --username nickmartin1ee7 --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/nickmartin1ee7/index.json"
+      run:
+        dotnet nuget add source --username nickmartin1ee7 --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/nickmartin1ee7/index.json"
+        dotnet nuget push "output/Uwuify.Humanizer.1.0.0.nupkg"  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
