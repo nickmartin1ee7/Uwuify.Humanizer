@@ -2,6 +2,29 @@
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <PackageProjectUrl>https://github.com/nickmartin1ee7/Uwuify.Humanizer</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/nickmartin1ee7/Uwuify.Humanizer</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+      <PlatformTarget>AnyCPU</PlatformTarget>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+      <PlatformTarget>AnyCPU</PlatformTarget>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Include="..\LICENSE" Pack="true" PackagePath="" />
+    </ItemGroup>
+
+  <PropertyGroup>
+      <PackageLicenseFile>LICENSE</PackageLicenseFile>
     </PropertyGroup>
 
 </Project>
