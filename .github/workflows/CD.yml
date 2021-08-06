@@ -3,11 +3,9 @@ name: CD
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
-  build:
+  publish:
 
     runs-on: ubuntu-latest
 
@@ -23,7 +21,7 @@ jobs:
       run: dotnet build --no-restore -c Release -o output
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - name: Nuget Configure
+      run: dotnet nuget add source --username nickmartin1ee7 --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/nickmartin1ee7/index.json"
     - name: Nuget Publish
-      env: 
-        PUBLISH_SECRET: ${{secrets.PUBLISH_SECRET}}
-      run: dotnet nuget push "output/Uwuify.Humanizer.1.0.0.nupkg"  --api-key $PUBLISH_SECRET --source "https://github.com/$GITHUB_REPOSITORY"
+      run: dotnet nuget push "output/Uwuify.Humanizer.1.0.0.nupkg"  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
