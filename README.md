@@ -12,11 +12,7 @@ The class library is made to be the main focus of this repository, with the othe
 
 ## Status Badges
 
-[![CI](https://github.com/nickmartin1ee7/Uwuify.Humanizer/actions/workflows/CI.yml/badge.svg)](https://github.com/nickmartin1ee7/Uwuify.Humanizer/actions/workflows/CI.yml)
-Pull Request verification
-
-[![CD](https://github.com/nickmartin1ee7/Uwuify.Humanizer/actions/workflows/CD.yml/badge.svg)](https://github.com/nickmartin1ee7/Uwuify.Humanizer/actions/workflows/CD.yml)
-NuGet Package Updates
+[![CI/CD](https://github.com/nickmartin1ee7/Uwuify.Humanizer/actions/workflows/CICD.yml/badge.svg)](https://github.com/nickmartin1ee7/Uwuify.Humanizer/actions/workflows/CICD.yml)
 
 ## Usage
 
