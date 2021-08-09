@@ -50,7 +50,7 @@ namespace Uwuify.Humanizer
         {
             char? previous = i - 1 < 0 ? null : spanInput[i - 1];
             var current = spanInput[i];
-            char? next = i + 1 >= spanInput.Length ? spanInput[^1] : spanInput[i + 1];
+            char? next = i + 1 >= spanInput.Length ? null : spanInput[i + 1];
 
             var replacement = (previous, current, next) switch
             {
@@ -63,7 +63,7 @@ namespace Uwuify.Humanizer
                 (_, 'r', 'e') => "w",
                 (not 'e', 'r', not 'e') => "w",
 
-                (_, 'n', not ' ') => "ny",
+                (' ' or null, 'n', _) => "ny",
 
                 // Stuttering
                 (' ', _, _) => _rng.NextDouble() < _stutterChance ? $"{current}-{current}" : current.ToString(),
