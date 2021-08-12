@@ -4,6 +4,8 @@ A library to format strings into the UwU variant.
 
 The class library is made to be the main focus of this repository, with the other projects (ConsoleApp and Benchmarks) being purely supplemental. 
 
+The Console app will be released as well.
+
 ## Features
 
 - Studder at random intervals (customizable as of 1.0.2).
