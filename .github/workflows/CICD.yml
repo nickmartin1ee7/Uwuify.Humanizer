@@ -54,8 +54,6 @@ jobs:
       with:
         tag_name: ${{ github.workflow }}
         name: Release ${{ github.run_number }}
-        body: |
-          Released via Continuous Delivery pipeline.
         draft: false
         prerelease: false
         files: output.zip
