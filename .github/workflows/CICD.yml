@@ -22,6 +22,7 @@ jobs:
       run: dotnet build --no-restore
       
   test:
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -38,7 +39,7 @@ jobs:
   
   publish:
     if: ${{ github.ref == 'refs/heads/main' }}
-    needs: build
+    needs: [ build, test ]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
