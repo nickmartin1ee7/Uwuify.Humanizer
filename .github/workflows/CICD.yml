@@ -36,7 +36,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore -c Release -o output
+      run: dotnet publish --no-restore -c Release -o output
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Nuget Configure
@@ -45,6 +45,10 @@ jobs:
       run: dotnet nuget push "output/*.nupkg"  --api-key ${{ secrets.GITHUB_TOKEN }} --source "github" --skip-duplicate
     - name: Nuget Publish - NuGet.org
       run: dotnet nuget push "output/*.nupkg"  --api-key ${{ secrets.NUGET_KEY }} --source "https://api.nuget.org/v3/index.json" --skip-duplicate
+    - name: GitHub Publish - Archive
+      run: |
+        apt install zip -y
+        zip -r output.zip output/
     - name: GitHub Publish - Release
       uses: softprops/action-gh-release@v1      
       with:
@@ -54,4 +58,4 @@ jobs:
           Released via Continuous Delivery pipeline.
         draft: false
         prerelease: false
-        files: output/*
+        files: output.zip
