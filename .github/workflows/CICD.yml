@@ -22,11 +22,11 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
+      
   publish:
     if: ${{ github.ref == 'refs/heads/main' }}
     needs: build
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Setup .NET
@@ -36,9 +36,9 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet publish --no-restore -c Release -o output
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet build --no-restore -c Release -o output
+    - name: Publish
+      run: dotnet publish --no-restore -c Release -o release
     - name: Nuget Configure
       run: dotnet nuget add source --username nickmartin1ee7 --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/nickmartin1ee7/index.json"
     - name: Nuget Publish - GitHub
@@ -48,7 +48,7 @@ jobs:
     - name: GitHub Publish - Archive
       run: |
         apt install zip -y
-        zip -r output.zip output/
+        zip -r release.zip release/
     - name: GitHub Publish - Release
       uses: softprops/action-gh-release@v1      
       with:
@@ -56,4 +56,4 @@ jobs:
         name: Release ${{ github.run_number }}
         draft: false
         prerelease: false
-        files: output.zip
+        files: release.zip
