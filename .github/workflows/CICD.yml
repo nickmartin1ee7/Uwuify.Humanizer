@@ -46,9 +46,7 @@ jobs:
     - name: Nuget Publish - NuGet.org
       run: dotnet nuget push "output/*.nupkg"  --api-key ${{ secrets.NUGET_KEY }} --source "https://api.nuget.org/v3/index.json" --skip-duplicate
     - name: GitHub Publish - Archive
-      run: |
-        apt install zip -y
-        zip -r release.zip release/
+      run: zip -r release.zip release/
     - name: GitHub Publish - Release
       uses: softprops/action-gh-release@v1      
       with:
