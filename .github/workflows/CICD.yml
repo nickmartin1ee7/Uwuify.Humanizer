@@ -49,7 +49,7 @@ jobs:
       uses: softprops/action-gh-release@v1      
       with:
         tag_name: ${{ github.workflow }}
-        release_name: Release ${{ github.run_number }}
+        name: Release ${{ github.run_number }}
         body: |
           Released via Continuous Delivery pipeline.
         draft: false
