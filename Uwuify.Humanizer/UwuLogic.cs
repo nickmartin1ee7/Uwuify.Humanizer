@@ -12,7 +12,7 @@ namespace Uwuify.Humanizer
 
         private readonly string[] _kaomojiEmbarassed =
         {
-            " (⁄ ⁄>⁄ ▽ ⁄<⁄ ⁄)..", " (*^.^*)..,", "..,", ",,,", "... ", ".. ", " mmm..", "O.o"
+            " (⁄ ⁄>⁄ ▽ ⁄<⁄ ⁄)..", " (*^.^*)..,", "..,", ",,,", "... ", ".. ", " mmm..", " O.o"
         };
 
         private readonly string[] _kaomojiJoy =
@@ -22,7 +22,7 @@ namespace Uwuify.Humanizer
 
         private readonly string[] _kaomojiSparkles =
         {
-            " *:･ﾟ✧*:･ﾟ✧ ", " ☆*:・ﾟ ", "〜☆ ", " uguu.., ", "-.-"
+            " *:･ﾟ✧*:･ﾟ✧ ", " ☆*:・ﾟ ", "〜☆ ", " uguu.., ", " -.-"
         };
 
         private readonly Random _rng = new();
