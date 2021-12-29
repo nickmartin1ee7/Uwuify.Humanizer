@@ -64,6 +64,7 @@ namespace Uwuify.Humanizer
                 (not 'e', 'r', not 'e') => "w",
 
                 (' ' or null, 'n', _) => "ny",
+                (' ' or null, 'h', 'i') => "hai",
 
                 // Stuttering
                 (' ', _, _) => _rng.NextDouble() < _stutterChance ? $"{current}-{current}" : current.ToString(),
