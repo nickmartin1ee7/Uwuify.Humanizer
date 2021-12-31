@@ -37,24 +37,37 @@ namespace Uwuify.Humanizer
         {
             string output;
             var outputSb = new StringBuilder();
-
+            var looped = false;
+            var stutterChance = _stutterChance;
             var spanInput = new Span<char>(input
                 .ToLower()
                 .ToCharArray());
-            
+
             do
             {
+                if (looped && stutterChance <= 1)
+                {
+                    stutterChance *= 2;
+
+                    if (stutterChance > 1)
+                        stutterChance = 1;
+                }
+
                 for (var i = 0; i < spanInput.Length; i++)
-                    Iteration_CharacterReplacement(i, spanInput, outputSb);
+                    Iteration_CharacterReplacement(i, spanInput, outputSb, stutterChance);
 
                 output = outputSb.ToString();
                 outputSb.Clear();
+                looped = true;
             } while (output == input);
 
             return output;
         }
 
-        private void Iteration_CharacterReplacement(in int i, in Span<char> spanInput, in StringBuilder outputSb)
+        private void Iteration_CharacterReplacement(in int i,
+            in Span<char> spanInput,
+            in StringBuilder outputSb,
+            in double stutterChance)
         {
             char? previous = i - 1 < 0 ? null : spanInput[i - 1];
             var current = spanInput[i];
@@ -72,10 +85,10 @@ namespace Uwuify.Humanizer
                 (not 'e', 'r', not 'e') => "w",
 
                 (' ' or null, 'n', _) => "ny",
-                (' ' or null, 'h', 'i') => "hai",
+                (' ' or null, 'h', 'i') => "ha", // hai
 
                 // Stuttering
-                (' ', _, _) => _rng.NextDouble() < _stutterChance ? $"{current}-{current}" : current.ToString(),
+                (' ' or null, _, _) => _rng.NextDouble() < stutterChance ? $"{current}-{current}" : current.ToString(),
 
                 // Kaomoji
                 (_, '.', _) => _kaomojiJoy[(int) (_rng.NextDouble() * _kaomojiJoy.Length)],

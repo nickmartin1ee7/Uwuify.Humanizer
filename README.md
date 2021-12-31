@@ -26,7 +26,7 @@ string myString = "Hello World! This is an example usage of the cursed humanizer
 // myString: "hewwo wowwd-.- t-this is an exampwe u-usage o-of the cuwsed h-humanyizew u-uwu s-stwinyg fowmattinyg extenysiony xD i h-hope you wove/hate i-it as much as i-i d-do *:･ﾟ✧*:･ﾟ✧"
 ```
 
-## Benchmarks (1.0.5)
+## Benchmarks (1.0.6)
 
 * BenchmarkDotNet=v0.13.0, OS=Windows 10.0.22000
 * AMD Ryzen 7 2700, 1 CPU, 16 logical and 8 physical cores
@@ -37,12 +37,12 @@ string myString = "Hello World! This is an example usage of the cursed humanizer
 
 |            Method |      Mean |     Error |    StdDev |  Gen 0 | Gen 1 | Gen 2 | Allocated |
 |------------------ |----------:|----------:|----------:|-------:|------:|------:|----------:|
-|  TestDefaultShort |  5.189 us | 0.0872 us | 0.0773 us | 1.6098 |     - |     - |      7 KB |
-| TestDefaultMedium | 18.573 us | 0.3381 us | 0.3162 us | 4.9438 |     - |     - |     20 KB |
-|   TestDefaultLong | 23.797 us | 0.4530 us | 0.5035 us | 6.1035 |     - |     - |     25 KB |
-|   TestCustomShort |  6.111 us | 0.1199 us | 0.1427 us | 1.8005 |     - |     - |      7 KB |
-|  TestCustomMedium | 21.531 us | 0.4067 us | 0.4521 us | 5.1575 |     - |     - |     21 KB |
-|    TestCustomLong | 26.095 us | 0.4944 us | 0.4625 us | 6.5613 |     - |     - |     27 KB |
+|  TestDefaultShort |  4.905 us | 0.0969 us | 0.1389 us | 1.6022 |     - |     - |      7 KB |
+| TestDefaultMedium | 18.931 us | 0.1735 us | 0.1538 us | 4.9438 |     - |     - |     20 KB |
+|   TestDefaultLong | 23.830 us | 0.2990 us | 0.2651 us | 6.1035 |     - |     - |     25 KB |
+|   TestCustomShort |  6.172 us | 0.1147 us | 0.1073 us | 1.7853 |     - |     - |      7 KB |
+|  TestCustomMedium | 21.201 us | 0.3734 us | 0.3310 us | 5.1575 |     - |     - |     21 KB |
+|    TestCustomLong | 26.795 us | 0.2072 us | 0.1730 us | 6.5308 |     - |     - |     27 KB |
 
 ## Contribution
 
