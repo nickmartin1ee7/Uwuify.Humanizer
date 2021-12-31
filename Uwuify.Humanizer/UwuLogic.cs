@@ -35,15 +35,23 @@ namespace Uwuify.Humanizer
 
         public string ConvertToUwuFormat(string input)
         {
+            string output;
+            var outputSb = new StringBuilder();
+
             var spanInput = new Span<char>(input
                 .ToLower()
                 .ToCharArray());
+            
+            do
+            {
+                for (var i = 0; i < spanInput.Length; i++)
+                    Iteration_CharacterReplacement(i, spanInput, outputSb);
 
-            var outputSb = new StringBuilder();
+                output = outputSb.ToString();
+                outputSb.Clear();
+            } while (output == input);
 
-            for (var i = 0; i < spanInput.Length; i++) Iteration_CharacterReplacement(i, spanInput, outputSb);
-
-            return outputSb.ToString();
+            return output;
         }
 
         private void Iteration_CharacterReplacement(in int i, in Span<char> spanInput, in StringBuilder outputSb)
