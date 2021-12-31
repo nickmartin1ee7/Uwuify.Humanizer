@@ -29,6 +29,6 @@
     <Product>Uwuify</Product>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageTags>funny;formatting;humanizer;</PackageTags>
-    <Version>1.0.4</Version>
+    <Version>1.0.5</Version>
   </PropertyGroup>
 </Project>
