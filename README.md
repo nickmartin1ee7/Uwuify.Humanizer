@@ -26,23 +26,23 @@ string myString = "Hello World! This is an example usage of the cursed humanizer
 // myString: "hewwo wowwd-.- t-this is an exampwe u-usage o-of the cuwsed h-humanyizew u-uwu s-stwinyg fowmattinyg extenysiony xD i h-hope you wove/hate i-it as much as i-i d-do *:･ﾟ✧*:･ﾟ✧"
 ```
 
-## Benchmarks (1.0.2)
+## Benchmarks (1.0.5)
 
-* BenchmarkDotNet=v0.13.0, OS=Windows 10
-* AMD, 1 CPU, 16 logical and 8 physical cores
-* .NET SDK=5.0.100
-  * [Host]     : .NET 5.0.8 (5.0.821.31504), X64 RyuJIT
-  * DefaultJob : .NET 5.0.8 (5.0.821.31504), X64 RyuJIT
+* BenchmarkDotNet=v0.13.0, OS=Windows 10.0.22000
+* AMD Ryzen 7 2700, 1 CPU, 16 logical and 8 physical cores
+* .NET SDK=6.0.101
+  * [Host]     : .NET 6.0.1 (6.0.121.56705), X64 RyuJIT
+  * DefaultJob : .NET 6.0.1 (6.0.121.56705), X64 RyuJIT
 
 
 |            Method |      Mean |     Error |    StdDev |  Gen 0 | Gen 1 | Gen 2 | Allocated |
 |------------------ |----------:|----------:|----------:|-------:|------:|------:|----------:|
-|  TestDefaultShort |  6.265 us | 0.0892 us | 0.0791 us | 1.6937 |     - |     - |      7 KB |
-| TestDefaultMedium | 22.431 us | 0.2268 us | 0.2011 us | 5.0659 |     - |     - |     21 KB |
-|   TestDefaultLong | 29.403 us | 0.4430 us | 0.3927 us | 6.4087 |     - |     - |     26 KB |
-|   TestCustomShort | 10.067 us | 0.1991 us | 0.2213 us | 2.1973 |     - |     - |      9 KB |
-|  TestCustomMedium | 29.079 us | 0.5545 us | 0.5187 us | 5.9509 |     - |     - |     24 KB |
-|    TestCustomLong | 37.586 us | 0.6099 us | 0.5093 us | 7.9346 |     - |     - |     33 KB |
+|  TestDefaultShort |  5.189 us | 0.0872 us | 0.0773 us | 1.6098 |     - |     - |      7 KB |
+| TestDefaultMedium | 18.573 us | 0.3381 us | 0.3162 us | 4.9438 |     - |     - |     20 KB |
+|   TestDefaultLong | 23.797 us | 0.4530 us | 0.5035 us | 6.1035 |     - |     - |     25 KB |
+|   TestCustomShort |  6.111 us | 0.1199 us | 0.1427 us | 1.8005 |     - |     - |      7 KB |
+|  TestCustomMedium | 21.531 us | 0.4067 us | 0.4521 us | 5.1575 |     - |     - |     21 KB |
+|    TestCustomLong | 26.095 us | 0.4944 us | 0.4625 us | 6.5613 |     - |     - |     27 KB |
 
 ## Contribution
 
