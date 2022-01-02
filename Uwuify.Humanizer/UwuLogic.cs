@@ -88,7 +88,7 @@ namespace Uwuify.Humanizer
                 (' ' or null, 'h', 'i') => "ha", // hai
 
                 // Stuttering
-                (' ' or null, _, _) => _rng.NextDouble() < stutterChance ? $"{current}-{current}" : current.ToString(),
+                (' ' or null, not ' ', _) => _rng.NextDouble() < stutterChance ? $"{current}-{current}" : current.ToString(),
 
                 // Kaomoji
                 (_, '.', _) => _kaomojiJoy[(int) (_rng.NextDouble() * _kaomojiJoy.Length)],
