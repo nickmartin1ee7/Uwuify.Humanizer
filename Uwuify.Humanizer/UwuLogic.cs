@@ -35,6 +35,10 @@ namespace Uwuify.Humanizer
 
         public string ConvertToUwuFormat(string input)
         {
+            if (string.IsNullOrWhiteSpace(input))
+                throw new ArgumentNullException(nameof(input));
+
+
             string output;
             var outputSb = new StringBuilder();
             var looped = false;
