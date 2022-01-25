@@ -42,6 +42,7 @@ namespace Uwuify.Humanizer
             string output;
             var outputSb = new StringBuilder();
             var looped = false;
+            var lastAttempt = false;
             var stutterChance = _stutterChance;
             var spanInput = new Span<char>(input
                 .ToLower()
@@ -54,7 +55,10 @@ namespace Uwuify.Humanizer
                     stutterChance *= 2;
 
                     if (stutterChance > 1)
+                    {
                         stutterChance = 1;
+                        lastAttempt = true;
+                    }
                 }
 
                 for (var i = 0; i < spanInput.Length; i++)
@@ -63,7 +67,7 @@ namespace Uwuify.Humanizer
                 output = outputSb.ToString();
                 outputSb.Clear();
                 looped = true;
-            } while (output == input);
+            } while (output == input && !lastAttempt);
 
             return output;
         }
@@ -80,7 +84,7 @@ namespace Uwuify.Humanizer
             var replacement = (previous, current, next) switch
             {
                 // Ignores
-                ('<', '@' or '#', _) => current.ToString(), // Discord Mentions <#112345740105420810>
+                (' ' or null, '<', '@' or '#') => current.ToString(), // Discord Mentions <#112345740105420810>
 
                 // Letter swapping
                 (_, 'l', 'e') => "w",
