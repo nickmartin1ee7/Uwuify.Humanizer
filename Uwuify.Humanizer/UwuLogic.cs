@@ -84,7 +84,7 @@ namespace Uwuify.Humanizer
             var replacement = (previous, current, next) switch
             {
                 // Ignores
-                (' ' or null, '<', '@' or '#') => current.ToString(), // Discord Mentions <#112345740105420810>
+                (' ' or null, '<', '@' or '#' or '!') => current.ToString(), // Discord Mentions
 
                 // Letter swapping
                 (_, 'l', 'e') => "w",
