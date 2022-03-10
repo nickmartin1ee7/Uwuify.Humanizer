@@ -84,7 +84,7 @@ namespace Uwuify.Humanizer
             var replacement = (previous, current, next) switch
             {
                 // Ignores
-                (' ' or null, '<', '@' or '#' or '!') => current.ToString(), // Discord Mentions
+                (' ' or null, '<', '@' or '#') => current.ToString(), // Discord Mentions
 
                 // Letter swapping
                 (_, 'l', 'e') => "w",
@@ -104,7 +104,7 @@ namespace Uwuify.Humanizer
                 // Kaomoji
                 (_, '.', _) => _kaomojiJoy[(int) (_rng.NextDouble() * _kaomojiJoy.Length)],
                 (_, '?', _) => _kaomojiConfuse[(int) (_rng.NextDouble() * _kaomojiConfuse.Length)],
-                (_, '!', _) => _kaomojiSparkles[(int) (_rng.NextDouble() * _kaomojiSparkles.Length)],
+                (not '@', '!', _) => _kaomojiSparkles[(int) (_rng.NextDouble() * _kaomojiSparkles.Length)],
                 (_, ',', _) => _kaomojiEmbarassed[(int) (_rng.NextDouble() * _kaomojiEmbarassed.Length)],
 
                 // No replacement
