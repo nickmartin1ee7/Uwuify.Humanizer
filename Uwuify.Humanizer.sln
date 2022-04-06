@@ -14,6 +14,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Uwuify.Humanizer.ConsoleApp", "Uwuify.Humanizer.ConsoleApp\Uwuify.Humanizer.ConsoleApp.csproj", "{D31FE76A-37E9-4103-AD0E-11443A97B781}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uwuify.Tests", "Uwuify.Tests\Uwuify.Tests.csproj", "{179A3C86-7A52-4675-951C-BC9905811B37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +32,14 @@ Global
 		{D245F6CF-CE56-42D1-913D-F9384EC236EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D245F6CF-CE56-42D1-913D-F9384EC236EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D245F6CF-CE56-42D1-913D-F9384EC236EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D31FE76A-37E9-4103-AD0E-11443A97B781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D31FE76A-37E9-4103-AD0E-11443A97B781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D31FE76A-37E9-4103-AD0E-11443A97B781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D31FE76A-37E9-4103-AD0E-11443A97B781}.Release|Any CPU.Build.0 = Release|Any CPU
+		{179A3C86-7A52-4675-951C-BC9905811B37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{179A3C86-7A52-4675-951C-BC9905811B37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{179A3C86-7A52-4675-951C-BC9905811B37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{179A3C86-7A52-4675-951C-BC9905811B37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
