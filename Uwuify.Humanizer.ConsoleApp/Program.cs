@@ -2,5 +2,5 @@
 
 using Uwuify.Humanizer;
 
-while(true)
+while (true)
     Console.WriteLine(Console.ReadLine()?.Uwuify());

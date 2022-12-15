@@ -41,8 +41,8 @@ namespace Uwuify.Humanizer
 
             string output;
             var outputSb = new StringBuilder();
-            var looped = false;
-            var lastAttempt = false;
+            var looped = false; // Control flag whether a single pass has no effect on input; double chance
+            var lastAttempt = false; // Set to true when stutterChance is 100%
             var stutterChance = _stutterChance;
             var spanInput = new Span<char>(input
                 .ToLower()
@@ -54,7 +54,7 @@ namespace Uwuify.Humanizer
                 {
                     stutterChance *= 2;
 
-                    if (stutterChance > 1)
+                    if (stutterChance > 1) // Clamp to 100%
                     {
                         stutterChance = 1;
                         lastAttempt = true;
@@ -67,6 +67,12 @@ namespace Uwuify.Humanizer
                 output = outputSb.ToString();
                 outputSb.Clear();
                 looped = true;
+
+                if (stutterChance <= 0) // Nothing more to do!
+                {
+                    break;
+                }
+
             } while (output == input && !lastAttempt);
 
             return output;
@@ -102,10 +108,10 @@ namespace Uwuify.Humanizer
                 (' ' or null, not ' ', _) => _rng.NextDouble() < stutterChance ? $"{current}-{current}" : current.ToString(),
 
                 // Kaomoji
-                (_, '.', _) => _kaomojiJoy[(int) (_rng.NextDouble() * _kaomojiJoy.Length)],
-                (_, '?', _) => _kaomojiConfuse[(int) (_rng.NextDouble() * _kaomojiConfuse.Length)],
-                (not '@', '!', _) => _kaomojiSparkles[(int) (_rng.NextDouble() * _kaomojiSparkles.Length)],
-                (_, ',', _) => _kaomojiEmbarassed[(int) (_rng.NextDouble() * _kaomojiEmbarassed.Length)],
+                (_, '.', _) => _kaomojiJoy[(int)(_rng.NextDouble() * _kaomojiJoy.Length)],
+                (_, '?', _) => _kaomojiConfuse[(int)(_rng.NextDouble() * _kaomojiConfuse.Length)],
+                (not '@', '!', _) => _kaomojiSparkles[(int)(_rng.NextDouble() * _kaomojiSparkles.Length)],
+                (_, ',', _) => _kaomojiEmbarassed[(int)(_rng.NextDouble() * _kaomojiEmbarassed.Length)],
 
                 // No replacement
                 _ => current.ToString()
